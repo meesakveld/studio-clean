@@ -1,0 +1,18 @@
+<nav>
+    <a href="/">Clean</a>
+
+    <ul>
+        {% for page in collections.navigation %}
+            <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <ul>
+        {% if showLegal %}
+            {% for legalPage in collections.legal %}
+                <li><a href="{{ legalPage.url }}">{{ legalPage.data.title }}</a></li>
+            {% endfor %}
+        {% endif %}
+    </ul>
+    
+</nav>
