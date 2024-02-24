@@ -5,6 +5,14 @@ tags:
     - navigation
 ---
 
-{% extends "content.njk" %}
+{% extends "grid.njk" %}
 
-<h1>Projects</h1>
+{% block content %}
+    
+    <ul class="list">
+        {% for projects in collections.projects %}
+            <li><a href="{{ projects.url }}">{{ projects.data.title }}</a></li>
+        {% endfor %}    
+    </ul>
+
+{% endblock %}
