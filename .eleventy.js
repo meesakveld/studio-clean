@@ -1,7 +1,7 @@
 module.exports = function(eleventyConfig) {
     
-    eleventyConfig.addPassthroughCopy("input/assets/");
     eleventyConfig.addNunjucksFilter("limit", (arr, limit) => arr.slice(0, limit));
+    eleventyConfig.addPassthroughCopy("input/assets/");
     
     return {
         dir: {
