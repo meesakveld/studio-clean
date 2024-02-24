@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title> {{ page_title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>{{ page_title }}</title>
 </head>
 
-<body>
+<body class="max-width">
     
-    {% include "partials/nav.njk" %}
+    <header>
+        {% include "partials/nav.njk" %}
+    </header>
 
-    {% block body %}{% endblock body %}
+    <main>
+        {% block body %}{% endblock body %}
+    </main>
 
-    {% include "partials/footer.njk" %}
+    <footer>
+        {% include "partials/footer.njk" %}
+    </footer>
 
 </body>
 

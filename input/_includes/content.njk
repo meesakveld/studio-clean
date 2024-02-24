@@ -1,0 +1,12 @@
+{% import "components/general.njk" as c %}
+
+{% extends "base.njk" %}
+
+{% block body %}
+
+    {{c.topSection({ title: title, description: description, linkUrl: linkUrl, linkText: linkText, goBackUrl: goBackUrl }) }}
+
+    {% block content %} {{ content | safe }} {% endblock content %}
+
+{% endblock body %}
+

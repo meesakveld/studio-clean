@@ -1,0 +1,18 @@
+---
+page_title: Blog
+title: Interested in what we have to say?
+tags: 
+    - navigation
+---
+
+{% extends "grid.njk" %}
+
+{% block content %}
+    
+    <ul class="list">
+        {% for blog in collections.blog %}
+            <li><a href="{{ blog.url }}">{{ blog.data.title }}</a></li>
+        {% endfor %}    
+    </ul>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+{% macro topSection(data) %}
+    <div class="topSection">
+        <div class="topSection__top">
+            <h1 class="topSection__title">{{ data.title }}</h1>
+            {% if data.linkUrl %}
+                {% if  data.linkText %}
+                    {{ button(data.linkUrl, data.linkText) }}
+                {% endif %}
+            {% endif %}
+        </div>
+        {% if data.description %}
+            <p class="topSection__description">{{ data.description }}</p>
+        {% endif %}
+        {% if data.goBackUrl %}
+            {{ buttonLink(data.goBackUrl, "Go back") }}
+        {% endif %}
+    </div>
+{% endmacro %}
+
+{% macro button(url, title) %}
+    <a class="button" href="{{ url }}">{{ title }}</a>
+{% endmacro %}
+
+{% macro buttonLink(url, title) %}
+    <a class="buttonLink" href="{{ url }}">{% if title %}<p>{{ title }}</p>{% endif %}</a>
+{% endmacro %}
+
+{% macro card(imageUrl, imageAlt, title, description, url) %}
+    <div class="card">
+        <div>
+            {% if url %}
+                {{ buttonLink(url, "") }}
+            {% endif %}
+            <img class="card__image" src="{{ imageUrl }}" alt="{{ imageAlt }}">
+        </div>
+        <div class="card__content">
+            <h2 class="card__title">{{ title }}</h2>
+            <p class="card__description">{{ description }}</p>
+        </div>
+    </div>
+{% endmacro %}

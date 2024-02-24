@@ -1,5 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
 @import url(./reset.css);
 
 body {
     background-color: #ECEBE5;
+}
+
+* {
+    color: var(--dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Literata', serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
+    padding: 2rem 0;
+}
+
+p, a {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+}
+
+img {
+    border-radius: 1.5rem;
+}
+
+.max-width {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+:root {
+    --light: #ECEBE5;
+    --dark: #191919;
+}
+
+/* —————————————————————————————————————————— */
+/* Button */
+.button {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.buttonLink {
+    
+    rotate: 180deg;
+    background-color: #ecebe550;
+    padding: 0.8rem;
+    border-radius: 0.75rem;
+
+    &:has(p) {
+        rotate: 0deg;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: var(--dark);
+        mask-image: url(/assets/icons/arrow.png);
+        mask-size: cover;
+    }
+}
+
+/* —————————————————————————————————————————— */
+/* NAV */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+    font-weight: 500;
+
+    & .nav__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+    }
+}
+
+
+/* —————————————————————————————————————————— */
+/* TOP SECTION */
+.topSection {
+
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    gap: clamp(2rem, 8vw, 3rem);
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--dark);
+    margin-bottom: 3rem;
+
+    & .topSection__title {
+        font-size: clamp(1.5rem, 8vw, 4rem);
+        
+        @media (width > 30rem) {
+            text-align: center;
+            padding: 0 10%;
+        }
+    }
+
+    & .topSection__top {
+
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 2rem;
+        width: 100%;
+        justify-content: center;
+
+        @media (width > 30rem) {
+            flex-direction: row;
+            align-items: flex-end; 
+            gap: 0;
+        }
+    }
+
+    & .topSection__top:has(.button) {
+
+        justify-content: space-between;
+
+        & .topSection__title {
+            flex-basis: 50%;
+            text-align: left;
+            padding: 0;
+        }
+
+    }
+
+    & .topSection__description {
+        @media (width > 30rem) {
+            margin: auto;
+        }
+    }
+
+    & .buttonLink {
+
+        @media (width > 30rem) {
+            margin: auto;
+        }
+
+    }
+
+}
+
+
+/* —————————————————————————————————————————— */
+/* ARTICLE */
+.article {
+    padding-bottom: 4rem;
+
+    & .article__banner {
+        width: 100%;
+        aspect-ratio: 5/1.5;
+        margin-bottom: 4rem;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    & .article__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        max-width: 50rem;
+        margin: 0 auto;
+
+        h2, h3, h4, h5, h6 {
+            padding: 0;
+        }
+
+        img {
+            aspect-ratio: 4/2.5;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
 }

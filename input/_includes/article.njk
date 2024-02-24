@@ -1,0 +1,23 @@
+{% import "components/general.njk" as c %}
+
+{% extends "content.njk" %}
+
+{% block content %}
+    
+    <div class="article">
+
+        {% if banner %}
+            <div class="article__banner">
+                <img src="{{ banner }}" alt="{{ title }}">
+            </div>
+        {% endif %}
+
+        <article class="article__content">
+
+            {{ content | safe }}
+
+        </article>
+
+    </div>
+
+{% endblock %}
