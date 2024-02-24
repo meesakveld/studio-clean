@@ -27,7 +27,7 @@
 
 {% macro card(imageUrl, imageAlt, title, description, url) %}
     <div class="card">
-        <div>
+        <div class="card__top">
             {% if url %}
                 {{ buttonLink(url, "") }}
             {% endif %}
@@ -38,4 +38,15 @@
             <p class="card__description">{{ description }}</p>
         </div>
     </div>
+{% endmacro %}
+
+{% macro imageLayout(img1, alt1, img2, alt2) %}
+    <div class="imageLayout">
+        <img src="{{ img1 }}" alt="{{ alt1 }}">
+        <img src="{{ img2 }}" alt="{{ alt2 }}">
+    </div>
+{% endmacro %}
+
+{% macro listItem(arg1, arg2, arg3, url) %}
+    
 {% endmacro %}

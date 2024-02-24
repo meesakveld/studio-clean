@@ -5,13 +5,15 @@ tags:
     - navigation
 ---
 
+{% import "components/general.njk" as c %}
+
 {% extends "grid.njk" %}
 
 {% block content %}
     
-    <ul class="list">
+    <ul class="grid">
         {% for blog in collections.blog %}
-            <li><a href="{{ blog.url }}">{{ blog.data.title }}</a></li>
+            <li>{{ c.card(blog.data.cardImage, blog.data.title, blog.data.title, blog.data.description, blog.url) }}</li>
         {% endfor %}    
     </ul>
 

@@ -7,6 +7,24 @@ tags:
     - navigation
 ---
 
+{% import "components/general.njk" as c %}
 {% extends "content.njk" %}
 
-<h1>About</h1>
+{% block content %}
+    
+    <div class="imageLayout__container">
+        {{ c.imageLayout("/assets/images/image-3.png", "Employees", "/assets/images/image-6.png", "Employees")}}
+        {{ c.imageLayout("/assets/images/image-1.png", "Employees", "/assets/images/image-4.png", "Employees")}}
+    </div>
+
+    <h2>Meet the team</h2>
+
+    <div class="grid">
+        {{ c.card("/assets/images/image-39.png", "John Doe", "John Doe", "Founder and CEO", "") }}
+        {{ c.card("/assets/images/image-7.png", "Mac Johnson", "Mac Johnson", "Prototyper", "") }}
+        {{ c.card("/assets/images/image-8.png", "Francis McDonald", "Francis McDonald", "Product Designer", "") }}
+        {{ c.card("/assets/images/image-9.png", "Jane Smith", "Jane Smith", "Front-end developer", "") }}
+        {{ c.card("/assets/images/image-10.png", "Mark Cuban", "Mark Cuban", "Back-end developer", "") }}
+    </div>
+
+{% endblock %}

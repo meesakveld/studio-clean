@@ -7,13 +7,20 @@ tags:
     - navigation
 ---
 
+{% import "components/general.njk" as c %}
+
 {% extends "content.njk" %}
 
 {% block content %}
 
-    
+    {{ c.imageLayout("/assets/images/image-2.png", "Employees", "/assets/images/image-5.png", "Our office") }}
 
-    <p>This is a simple site to demonstrate how to use the <a href="https://11ty.dev">11ty</a> static site generator.</p>
+    <h2>Our projects</h2>
+    <ul>
+        {% for project in collections.projects | limit(3) %}
+            <p>{{ project.data.title }}</p>
+        {% endfor %}
+    </ul>
 
 {% endblock content %}
 
