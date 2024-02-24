@@ -15,12 +15,15 @@ tags:
 
     {{ c.imageLayout("/assets/images/image-2.png", "Employees", "/assets/images/image-5.png", "Our office") }}
 
-    <h2>Our projects</h2>
-    <ul>
-        {% for project in collections.projects | limit(3) %}
-            <p>{{ project.data.title }}</p>
-        {% endfor %}
-    </ul>
+    <div>
+        <h2>Our projects</h2>
+        <ul>
+            {% for project in collections.projects | limit(3) %}
+                <p>{{ project.data.title }}</p>
+            {% endfor %}
+        </ul>
+        {{ c.button("/projects", "See all projects") }}
+    </div>
 
 {% endblock content %}
 
