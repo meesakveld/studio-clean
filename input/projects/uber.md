@@ -3,7 +3,7 @@ title: Uber
 description: Rebranding
 cardImage: /assets/images/image-22.png
 banner: /assets/images/image-22.png
-date: 21.02.2024
+date: 2024-02-21
 ---
 
 ## Decoding Uber's Rebranding: A Strategic Shift in Visual Identity

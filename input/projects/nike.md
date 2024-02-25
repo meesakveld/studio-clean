@@ -3,7 +3,7 @@ title: Nike
 description: Appdevelopment
 cardImage: /assets/images/image-25.png
 banner: /assets/images/image-25.png
-date: 22.10.2023
+date: 2023-10-22
 ---
 
 ## Revolutionizing Athletic Engagement

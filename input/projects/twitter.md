@@ -3,7 +3,7 @@ title: Twitter
 description: Rebranding
 cardImage: /assets/images/image-34.png
 banner: /assets/images/image-34.png
-date: 05.08.2023
+date: 2023-08-05
 ---
 
 ## Twitter's Rebranding: A Visual Evolution

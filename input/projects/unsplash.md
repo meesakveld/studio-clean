@@ -3,7 +3,7 @@ title: Unsplash
 description: Webdesign
 cardImage: /assets/images/image-32.png
 banner: /assets/images/image-32.png
-date: 03.09.2023
+date: 2023-09-03
 ---
 
 ## Elevating Visual Storytelling
