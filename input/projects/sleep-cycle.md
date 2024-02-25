@@ -3,6 +3,7 @@ title: Sleep Cycle
 description: Appdesign
 cardImage: /assets/images/image-31.png
 banner: /assets/images/image-31.png
+date: 14.09.2023
 ---
 
 ## Enhancing Sleep Quality through App Design

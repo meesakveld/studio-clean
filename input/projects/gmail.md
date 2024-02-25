@@ -3,6 +3,7 @@ title: Gmail
 description: Webdevelopment
 cardImage: /assets/images/image-28.png
 banner: /assets/images/image-24.png
+date: 06.11.2023
 ---
 
 ## Optimizing the User Experience

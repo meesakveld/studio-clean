@@ -3,6 +3,7 @@ title: CardMapper
 description: Appdesign
 cardImage: /assets/images/image-33.png
 banner: /assets/images/image-33.png
+date: 27.08.2023
 ---
 
 ## Crafting a Seamless User Experience

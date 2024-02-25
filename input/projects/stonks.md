@@ -3,6 +3,7 @@ title: Stonks
 description: Webdesign
 cardImage: /assets/images/image-27.png
 banner: /assets/images/image-27.png
+date: 12.01.2024
 ---
 
 ## Crafting a Stonks App Web Design

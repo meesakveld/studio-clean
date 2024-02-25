@@ -3,6 +3,7 @@ title: Google Home
 description: Appdevelopment
 cardImage: /assets/images/image-30.png
 banner: /assets/images/image-30.png
+date: 01.10.2023
 ---
 
 ## Crafting a Seamless User Experience
