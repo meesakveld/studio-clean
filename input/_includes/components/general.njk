@@ -47,6 +47,26 @@
     </div>
 {% endmacro %}
 
-{% macro listItem(arg1, arg2, arg3, url) %}
+{% macro listItem(date, left, right, url) %}
     
+    <li class="listItem">
+        <{% if url %}a href="{{ url }}"{% else %}div{% endif %} class="listItem__container">
+            <div class="listItem__left">
+                {% if date %}
+                    <p class="listItem__date">{{ date  | customDate }}</p>
+                {% endif %}
+                <p class="listItem__left">{{ left }}</p>
+            </div>
+            <div class="listItem__right">
+                <p class="listItem__right">{{ right }}</p>
+            </div>
+        </{% if url %}a{% else %}div{% endif %}>
+    </li>
+
+{% endmacro %}
+
+{% macro banner(imageURL, title) %}
+    <div class="banner">
+        <img src="{{ imageURL }}" alt="{{ title }}">
+    </div>
 {% endmacro %}
