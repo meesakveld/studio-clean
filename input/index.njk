@@ -15,15 +15,30 @@ tags:
 
     {{ c.imageLayout("/assets/images/image-2.png", "Employees", "/assets/images/image-5.png", "Our office") }}
 
-    <div>
+    <div class="section">
         <h2>Our projects</h2>
-        <ul>
+        <ul class="listItems">
             {% for project in collections.projects | limit(3) %}
-                <p>{{ project.data.title }}</p>
+                {{ c.listItem(project.data.date, project.data.title, project.data.description, project.url) }}
             {% endfor %}
         </ul>
-        {{ c.button("/projects", "See all projects") }}
+        <div class="section__button">
+            {{ c.button("/projects", "See all projects") }}
+        </div>
     </div>
+
+    <div class="section">
+        <h2>Read our latest news</h2>
+        <ul class="grid">
+            {% for blog in collections.blog | limit(3) %}
+                <li>{{ c.card(blog.data.cardImage, blog.data.title, blog.data.title, blog.data.description, blog.url) }}</li>
+            {% endfor %}
+        </ul>
+        <div class="section__button">
+            {{ c.button("/blog", "Read our blog") }}
+        </div>
+    </div>
+
 
 {% endblock content %}
 
