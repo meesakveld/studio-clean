@@ -5,4 +5,24 @@ tags:
     - navigation
 ---
 
+{% import "components/general.njk" as c %}
+
 {% extends "content.njk" %}
+
+{% block content %}
+    
+    <div class="section">
+        <ul class="listItems">
+            {{ c.listItem("", "Korenmarkt, 12, 9000 Ghent, Belgium", "Adress", "") }}
+            {{ c.listItem("", "info@clean.be", "Email", "mailto:info@clean.be") }}
+            {{ c.listItem("", "+32 09 45 78 12", "Phone", "tel:003209457812") }}
+        </ul>
+
+        <div class="section__button">
+            {{ c.button("mailto:info@clean.be", "Send us an email")}}
+        </div>
+    </div>
+
+    {{ c.banner("/assets/images/image-35.png", "Ghent") }}
+
+{% endblock %}
