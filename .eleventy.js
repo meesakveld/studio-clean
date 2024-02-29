@@ -1,5 +1,3 @@
-const { DateTime } = require("luxon");
-
 module.exports = function(eleventyConfig) {
     
     eleventyConfig.addNunjucksFilter("limit", (arr, limit) => {
@@ -12,7 +10,9 @@ module.exports = function(eleventyConfig) {
     });
 
     eleventyConfig.addFilter("customDate", (dateObj) => {
-        return DateTime.fromJSDate(dateObj).toFormat("dd.MM.yyyy");
+        const date = dateObj
+        const formattedDate = new Intl.DateTimeFormat('en-GB', { day: '2-digit', month: '2-digit', year: 'numeric' }).format(date);
+        return formattedDate;
     });
     eleventyConfig.addPassthroughCopy("input/assets/");
     
