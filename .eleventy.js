@@ -16,8 +16,18 @@ module.exports = function(eleventyConfig) {
     });
     eleventyConfig.addPassthroughCopy("input/assets/");
     eleventyConfig.addPassthroughCopy("input/robots.txt");
+
+    eleventyConfig.setBrowserSyncConfig({
+        server: {
+          baseDir: "./docs/",
+          serveStaticOptions: {
+            base: "/ui-prototyping-studio-clean/"
+          }
+        }
+      });
     
     return {
+        pathprefix: "/ui-prototyping-studio-clean/",
         dir: {
             input: "./input",
             output: "./docs"
