@@ -10,7 +10,7 @@
     {% if showLegal %}
         <ul class="nav__list">
             {% for legalPage in collections.legal %}
-                <li><a href="./{{ legalPage.url }}">{{ legalPage.data.page_title }}</a></li>
+                <li><a href="{{ legalPage.url }}">{{ legalPage.data.page_title }}</a></li>
             {% endfor %}
         </ul>
     {% endif %}
