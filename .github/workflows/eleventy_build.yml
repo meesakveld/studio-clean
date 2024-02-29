@@ -31,7 +31,6 @@ jobs:
       run: |
         git config --local user.email "mees.akveld@student.arteveldehs.be"
         git config --local user.name "pgm-meesakveld"
-        git checkout gh-pages
         git commit -m "Deploy to gh-pages"
       
     - name: Push changes
