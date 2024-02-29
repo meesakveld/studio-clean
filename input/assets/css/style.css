@@ -298,6 +298,8 @@ nav {
     @media (width > 40rem) {
         & > img {
             width: calc(49% - clamp(1rem, 8vw, 2rem));
+            aspect-ratio: 4/3;
+            object-fit: cover;
         }   
     }
 }
