@@ -27,6 +27,12 @@ jobs:
     - name: Add all files to git
       run: git add -A
       
+    - name: Commit changes
+      run: |
+        git config --local user.email "mees.akveld@student.arteveldehs.be"
+        git config --local user.name "pgm-meesakveld"
+        git commit -m "Deploy to gh-pages"
+      
     - name: Push changes
       uses: peaceiris/actions-gh-pages@v3
       with:
