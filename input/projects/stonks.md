@@ -4,6 +4,7 @@ description: Webdesign
 cardImage: /assets/images/image-27.png
 banner: /assets/images/image-27.png
 date: 2024-01-12
+tags: projectShowcase
 ---
 
 ## Crafting a Stonks App Web Design

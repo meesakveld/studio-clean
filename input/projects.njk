@@ -12,7 +12,7 @@ tags:
 {% block grid %}
     
         {% for project in collections.projects %}
-            <li>{{ c.card(project.data.cardImage, project.data.title, project.data.title, project.data.description, project.url) }}</li>
+            <li>{{ c.card(project.data.cardImage, project.data.title, project.data.description, project.url) }}</li>
         {% endfor %}    
 
 {% endblock %}

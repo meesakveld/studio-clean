@@ -4,6 +4,7 @@ description: Rebranding
 cardImage: /assets/images/image-22.png
 banner: /assets/images/image-22.png
 date: 2024-02-21
+tags: projectShowcase
 ---
 
 ## Decoding Uber's Rebranding: A Strategic Shift in Visual Identity

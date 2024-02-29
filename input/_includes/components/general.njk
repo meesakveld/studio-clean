@@ -25,13 +25,13 @@
     <a class="buttonLink" href="{{ url }}">{% if title %}<p>{{ title }}</p>{% endif %}</a>
 {% endmacro %}
 
-{% macro card(imageUrl, imageAlt, title, description, url) %}
+{% macro card(imageUrl, title, description, url) %}
     <div class="card">
         <div class="card__top">
             {% if url %}
                 {{ buttonLink(url, "") }}
             {% endif %}
-            <img class="card__image" src="{{ imageUrl }}" alt="{{ imageAlt }}">
+            <img class="card__image" src="{{ imageUrl }}" alt="{{ title }}">
         </div>
         <div class="card__content">
             <h2 class="card__title">{{ title }}</h2>
@@ -40,10 +40,11 @@
     </div>
 {% endmacro %}
 
-{% macro imageLayout(img1, alt1, img2, alt2) %}
+{% macro imageLayout(images) %}
     <div class="imageLayout">
-        <img src="{{ img1 }}" alt="{{ alt1 }}">
-        <img src="{{ img2 }}" alt="{{ alt2 }}">
+        {% for image in images %}
+            <img src="{{ image.src }}" alt="{{ image.alt }}">
+        {% endfor %}
     </div>
 {% endmacro %}
 
