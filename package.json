@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy",
+    "build": "eleventy",
     "start": "npx @11ty/eleventy --serve",
     "git": "git add . && git commit -m \"$npm_config_message\" && git push personal main && git push origin main",
     "push": "git push personal main && git push origin main"
