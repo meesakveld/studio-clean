@@ -1,9 +1,10 @@
 name: Eleventy Build
 
+
 on:
   push:
     branches:
-      - main
+      - master
       
 jobs:
   deploy:
@@ -16,10 +17,6 @@ jobs:
           uses: actions/setup-node@v1
           with:
             node-version: '10.x'
-
-
-        - run: npm ci
-
 
         - run: npm run build
 
