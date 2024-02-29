@@ -29,7 +29,7 @@ jobs:
       
     - name: Commit changes
       run: |
-        git config --local user.email "mees.akveld@student.arteveldehs.com"
+        git config --local user.email "mees.akveld@student.arteveldehs.be"
         git config --local user.name "pgm-meesakveld"
         git commit -m "Deploy to gh-pages"
       
