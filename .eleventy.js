@@ -15,7 +15,6 @@ module.exports = function (eleventyConfig) {
         return formattedDate;
     });
     eleventyConfig.addPassthroughCopy("input/assets/");
-    eleventyConfig.addPassthroughCopy("input/robots.txt");
 
     return {
         dir: {
