@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npx @11ty/eleventy",
     "start": "npx @11ty/eleventy --serve",
-    "push": "git push personal && git push origin",
+    "push": "git push personal main && git push origin main",
     "commit": "git add . && git commit -m \"$npm_config_message\""
   },
   "author": "Mees Akveld",
