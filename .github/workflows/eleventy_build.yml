@@ -33,7 +33,7 @@ jobs:
         git config --local user.name "pgm-meesakveld"
         git commit -m "Deploy to gh-pages"
       
-    - name: Push changes
+    - name: Push changes 
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.PUBLISH_TOKEN }}
