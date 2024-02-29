@@ -3,6 +3,7 @@ page_title: About
 title: We are a creative agency with talented people.
 linkUrl: /contact
 linkText: Contact us
+order: 4
 tags: 
     - navigation
 layout: showcase

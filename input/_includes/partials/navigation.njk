@@ -2,7 +2,7 @@
     <a href="/">Clean</a>
 
     <ul class="nav__list">
-        {% for page in collections.navigation %}
+        {% for page in collections.navigation | sortByOrder() %}
             <li><a href="{{ page.url }}">{{ page.data.page_title }}</a></li>
         {% endfor %}
     </ul>

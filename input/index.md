@@ -1,6 +1,7 @@
 ---
 page_title: Home
 title: We’re Clean, but we get our hands dirty.
+order: 1
 linkUrl: /projects
 linkText: Our projects
 tags: 
