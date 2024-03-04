@@ -2,18 +2,7 @@
 page_title: Projects
 title: We make digital experiences.
 order: 3
-tags: 
-    - navigation
+tags: navigation
+layout: grid.njk
+data: projects
 ---
-
-{% import "components/general.njk" as c %}
-
-{% extends "grid.njk" %}
-
-{% block grid %}
-    
-        {% for project in collections.projects %}
-            <li>{{ c.card(project.data.cardImage, project.data.title, project.data.description, project.url) }}</li>
-        {% endfor %}    
-
-{% endblock %}

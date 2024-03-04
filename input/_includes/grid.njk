@@ -6,7 +6,9 @@
     
     <ul class="grid">
 
-       {% block grid %}{% endblock %}
+        {% for item in collections[data] %}
+            <li>{{ c.card(item.data.cardImage, item.data.title, item.data.description, item.url) }}</li>
+        {% endfor %}    
 
     </ul>
 
