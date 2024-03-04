@@ -14,15 +14,15 @@ order: 5
     
     <div class="section">
         <ul class="listItems">
-            {{ c.listItem("", "Korenmarkt, 12, 9000 Ghent, Belgium", "Adress", "") }}
-            {{ c.listItem("", "info@clean.be", "Email", "mailto:info@clean.be") }}
-            {{ c.listItem("", "+32 09 45 78 12", "Phone", "tel:003209457812") }}
+            {% for item in contact %}
+                {{ c.listItem("", item.value, item.title, item.url) }}
+            {% endfor %}
         </ul>
 
         <div class="section__button">
             {{ c.button("mailto:info@clean.be", "Send us an email")}}
         </div>
-    </div>
+    </div> 
 
     {{ c.banner("/assets/images/image-35.png", "Ghent") }}
 
