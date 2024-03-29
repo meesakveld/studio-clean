@@ -1,7 +1,7 @@
 {% macro topSection(data) %}
-    <div class="topSection">
-        <div class="topSection__top">
-            <h1 class="topSection__title">{{ data.title }}</h1>
+    <div class="top_section">
+        <div class="top_section__top">
+            <h1 class="top_section__title">{{ data.title }}</h1>
             {% if data.linkUrl %}
                 {% if  data.linkText %}
                     {{ button(data.linkUrl, data.linkText) }}
@@ -9,7 +9,7 @@
             {% endif %}
         </div>
         {% if data.description %}
-            <p class="topSection__description">{{ data.description }}</p>
+            <p class="top_section__description">{{ data.description }}</p>
         {% endif %}
         {% if data.goBackUrl %}
             {{ buttonLink(data.goBackUrl, "Go back") }}
@@ -22,7 +22,7 @@
 {% endmacro %}
 
 {% macro buttonLink(url, title) %}
-    <a class="buttonLink" href="{{ url }}">{% if title %}<p>{{ title }}</p>{% endif %}</a>
+    <a class="button_link" href="{{ url }}">{% if title %}<p>{{ title }}</p>{% endif %}</a>
 {% endmacro %}
 
 {% macro card(imageUrl, title, description, url) %}
@@ -41,7 +41,7 @@
 {% endmacro %}
 
 {% macro imageLayout(images) %}
-    <div class="imageLayout">
+    <div class="image_layout">
         {% for image in images %}
             <img src="{{ image.src }}" alt="{{ image.alt }}">
         {% endfor %}
@@ -50,16 +50,16 @@
 
 {% macro listItem(date, left, right, url) %}
     
-    <li class="listItem">
-        <{% if url %}a href="{{ url }}"{% else %}div{% endif %} class="listItem__container">
-            <div class="listItem__left">
+    <li class="list_item">
+        <{% if url %}a href="{{ url }}"{% else %}div{% endif %} class="list_item__container">
+            <div class="list_item__left">
                 {% if date %}
-                    <p class="listItem__date">{{ date  | customDate }}</p>
+                    <p class="list_item__date">{{ date  | customDate }}</p>
                 {% endif %}
-                <p class="listItem__left">{{ left }}</p>
+                <p class="list_item__left">{{ left }}</p>
             </div>
-            <div class="listItem__right">
-                <p class="listItem__right">{{ right }}</p>
+            <div class="list_item__right">
+                <p class="list_item__right">{{ right }}</p>
             </div>
         </{% if url %}a{% else %}div{% endif %}>
     </li>

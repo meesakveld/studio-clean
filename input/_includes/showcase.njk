@@ -12,7 +12,7 @@
     {% if listData %}
         <div class="section">
             <h2>{{ listTitle }}</h2>
-            <ul class="listItems">
+            <ul class="list_items">
                 {% for item in collections[listData] %}
                     {{ c.listItem(item.data.date, item.data.title, item.data.description, item.url) }}
                 {% endfor %}

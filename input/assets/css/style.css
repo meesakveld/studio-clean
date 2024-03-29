@@ -63,7 +63,7 @@ footer {
     display: inline-block;
 }
 
-.buttonLink {
+.button_link {
     
     background-color: #ecebe550;
     padding: 0.8rem;
@@ -130,7 +130,7 @@ nav {
 
 /* —————————————————————————————————————————— */
 /* TOP SECTION */
-.topSection {
+.top_section {
 
     display: flex;
     align-items: baseline;
@@ -140,7 +140,7 @@ nav {
     border-bottom: 1px solid var(--dark);
     margin-bottom: 3rem;
 
-    & .topSection__title {
+    & .top_section__title {
         font-size: clamp(1.5rem, 8vw, 4rem);
         
         @media (width > 30rem) {
@@ -149,7 +149,7 @@ nav {
         }
     }
 
-    & .topSection__top {
+    & .top_section__top {
 
         display: flex;
         flex-direction: column;
@@ -165,11 +165,11 @@ nav {
         }
     }
 
-    & .topSection__top:has(.button) {
+    & .top_section__top:has(.button) {
 
         justify-content: space-between;
 
-        & .topSection__title {
+        & .top_section__title {
             flex-basis: 50%;
             text-align: left;
             padding: 0;
@@ -177,13 +177,13 @@ nav {
 
     }
 
-    & .topSection__description {
+    & .top_section__description {
         @media (width > 30rem) {
             margin: auto;
         }
     }
 
-    & .buttonLink {
+    & .button_link {
 
         @media (width > 30rem) {
             margin: auto;
@@ -256,7 +256,7 @@ nav {
         width: 100%;
         aspect-ratio: 4/3;
 
-        & .buttonLink {
+        & .button_link {
             position: absolute;
             top: 10px;
             right: 10px;
@@ -282,14 +282,14 @@ nav {
 
 /* —————————————————————————————————————————— */
 /* imageLayout */
-.imageLayout__container {
+.image_layout__container {
     display: flex;
     flex-direction: column;
     gap: clamp(1rem, 8vw, 4rem);
     margin-bottom: clamp(3rem, 8vw, 5rem);
 }
 
-.imageLayout {
+.image_layout {
     display: flex;
     flex-wrap: wrap;
     gap: clamp(1rem, 8vw, 2rem);
@@ -308,12 +308,12 @@ nav {
 
 /* —————————————————————————————————————————— */
 /* ListItem */
-.listItems {
+.list_items {
     padding: 0;
     margin-bottom: 5rem;
 }
 
-.listItem {
+.list_item {
 
     padding: 1rem 0;
     border-bottom: 1px solid var(--dark);
@@ -321,14 +321,14 @@ nav {
     width: 100%;
     flex-grow: 1;
 
-    .listItem__container {
+    .list_item__container {
         display: flex;
         align-items: center;
         gap: 2rem;
         justify-content: space-between
     }
 
-    & .listItem__left {
+    & .list_item__left {
         display: flex;
         gap: 2rem;
     }

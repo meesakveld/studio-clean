@@ -13,7 +13,7 @@ order: 5
 {% block content %}
     
     <div class="section">
-        <ul class="listItems">
+        <ul class="list_items">
             {% for item in contact %}
                 {{ c.listItem("", item.value, item.title, item.url) }}
             {% endfor %}
