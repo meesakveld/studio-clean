@@ -1,7 +1,7 @@
 ---
 title: Efficient Workflow with CSS Preprocessors
 description: Learn how to streamline your CSS development process with Sass and Less.
-cardImage: /assets/images/image-15.png
+cardImage: image-15.png
 ---
 
 ## Introduction to CSS Preprocessors

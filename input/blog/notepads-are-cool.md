@@ -1,7 +1,7 @@
 ---
 title: Notepads are cool
 description: We skipped Notion and other apps, we're going back to basics.
-cardImage: /assets/images/image-37.png
+cardImage: image-37.png
 ---
 
 ## Rediscovering Essential Productivity

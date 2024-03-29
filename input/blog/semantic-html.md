@@ -1,7 +1,7 @@
 ---
 title: Semantic HTML
 description: Explore the significance of semantic HTML in creating well-structured and accessible web content
-cardImage: /assets/images/image-42.png
+cardImage: image-42.png
 ---
 
 ## The Significance of Semantic HTML in Modern Web Development

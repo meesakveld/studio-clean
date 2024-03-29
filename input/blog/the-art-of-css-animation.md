@@ -1,7 +1,7 @@
 ---
 title: The Art of CSS Animation
 description: Learn how to create captivating animations with CSS and enhance the visual appeal of your designs.
-cardImage: /assets/images/image-19.png
+cardImage: image-19.png
 ---
 
 ## Introduction to CSS Animation

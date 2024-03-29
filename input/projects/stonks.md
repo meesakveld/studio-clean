@@ -1,8 +1,8 @@
 ---
 title: Stonks
 description: Webdesign
-cardImage: /assets/images/image-27.png
-banner: /assets/images/image-27.png
+cardImage: image-27.png
+banner: image-27.png
 date: 2024-01-12
 tags: projectShowcase
 ---

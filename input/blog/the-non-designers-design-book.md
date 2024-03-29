@@ -1,7 +1,7 @@
 ---
 title: The Non-Designer's Design Book
 description: Learn the fundamental principles of design and how to apply them to create visually appealing and effective designs.
-cardImage: /assets/images/image-21.png
+cardImage: image-21.png
 ---
 
 ## Introduction to Design Principles

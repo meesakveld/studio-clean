@@ -1,7 +1,7 @@
 ---
 title: Web Design Trends 2024
 description: Explore the latest web design trends and predictions for 2024.
-cardImage: /assets/images/image-17.png
+cardImage: image-17.png
 ---
 
 ## Introduction to Web Design Trends 2024

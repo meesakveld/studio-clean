@@ -8,9 +8,9 @@ tags:
     - navigation
 
 images:
-    -   src: "./assets/images/image-2.png"
+    -   src: "image-2.png"
         alt: "Employees"
-    -   src: "./assets/images/image-5.png"
+    -   src: "image-5.png"
         alt: "Our office"
 
 listTitle: "Projects"

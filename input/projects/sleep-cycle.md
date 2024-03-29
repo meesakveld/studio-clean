@@ -1,8 +1,8 @@
 ---
 title: Sleep Cycle
 description: Appdesign
-cardImage: /assets/images/image-31.png
-banner: /assets/images/image-31.png
+cardImage: image-31.png
+banner: image-31.png
 date: 2023-09-14
 ---
 

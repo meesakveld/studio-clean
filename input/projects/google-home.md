@@ -1,8 +1,8 @@
 ---
 title: Google Home
 description: Appdevelopment
-cardImage: /assets/images/image-30.png
-banner: /assets/images/image-30.png
+cardImage: image-30.png
+banner: image-30.png
 date: 2023-10-01
 ---
 

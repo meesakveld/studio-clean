@@ -1,8 +1,8 @@
 ---
 title: Unsplash
 description: Webdesign
-cardImage: /assets/images/image-32.png
-banner: /assets/images/image-32.png
+cardImage: image-32.png
+banner: image-32.png
 date: 2023-09-03
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: Gmail
 description: Webdevelopment
-cardImage: /assets/images/image-28.png
-banner: /assets/images/image-24.png
+cardImage: image-28.png
+banner: image-24.png
 date: 2023-11-06
 tags: projectShowcase
 ---

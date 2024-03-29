@@ -1,7 +1,7 @@
 ---
 title: Design Thinking in Web Development
 description: Learn how to apply design thinking principles to web development and create user-centered digital experiences.
-cardImage: /assets/images/image-20.png
+cardImage: image-20.png
 ---
 
 ## Introduction to Design Thinking in Web Development

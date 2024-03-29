@@ -1,8 +1,8 @@
 ---
 title: CardMapper
 description: Appdesign
-cardImage: /assets/images/image-33.png
-banner: /assets/images/image-33.png
+cardImage: image-33.png
+banner: image-33.png
 date: 2023-08-27
 ---
 

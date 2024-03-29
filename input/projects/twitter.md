@@ -1,8 +1,8 @@
 ---
 title: Twitter
 description: Rebranding
-cardImage: /assets/images/image-34.png
-banner: /assets/images/image-34.png
+cardImage: image-34.png
+banner: image-34.png
 date: 2023-08-05
 ---
 

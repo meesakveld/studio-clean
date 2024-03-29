@@ -1,7 +1,7 @@
 ---
 title: Why 11ty rocks!
 description: Eleventy is our favourite Static Site Generator, we'll tell you why.
-cardImage: /assets/images/image-36.png
+cardImage: image-36.png
 ---
 
 ## What is a Static Site Generator?

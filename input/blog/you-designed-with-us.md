@@ -1,7 +1,7 @@
 ---
 title: You designed with us
 description: We held a User Experience workshop, and it was amazing.
-cardImage: /assets/images/image-38.png
+cardImage: image-38.png
 ---
 
 ## Unveiling the Success of our User Experience Workshop

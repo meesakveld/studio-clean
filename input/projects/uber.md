@@ -1,8 +1,8 @@
 ---
 title: Uber
 description: Rebranding
-cardImage: /assets/images/image-22.png
-banner: /assets/images/image-22.png
+cardImage: image-22.png
+banner: image-22.png
 date: 2024-02-21
 tags: projectShowcase
 ---

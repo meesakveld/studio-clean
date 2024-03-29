@@ -1,8 +1,8 @@
 ---
 title: Nike
 description: Appdevelopment
-cardImage: /assets/images/image-25.png
-banner: /assets/images/image-25.png
+cardImage: image-25.png
+banner: image-25.png
 date: 2023-10-22
 ---
 

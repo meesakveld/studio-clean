@@ -1,7 +1,7 @@
 ---
 title: Typography Mastery
 description: Learn how to master typography and create visually engaging designs.
-cardImage: /assets/images/image-18.png
+cardImage: image-18.png
 ---
 
 ## Introduction to Typography Mastery

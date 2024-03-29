@@ -1,7 +1,7 @@
 ---
 title: Accessibility in Design
 description: Learn how to create accessible designs that are inclusive and user-friendly.
-cardImage: /assets/images/image-16.png
+cardImage: image-16.png
 ---
 
 ## Introduction to Accessibility in Design
