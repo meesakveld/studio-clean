@@ -9,13 +9,13 @@ tags:
 layout: showcase
 
 images:
--   src: "/assets/images/image-3.png"
+-   src: "image-3.png"
     alt: "Employees"
--   src: "/assets/images/image-1.png"
+-   src: "image-1.png"
     alt: "Employees"
--   src: "/assets/images/image-6.png"
+-   src: "image-6.png"
     alt: "Employees"
--   src: "/assets/images/image-4.png"
+-   src: "image-4.png"
     alt: "Employees"
 
 cardsTitle: "Meet the team"

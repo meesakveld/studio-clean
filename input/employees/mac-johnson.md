@@ -1,5 +1,5 @@
 ---
-cardImage: /assets/images/image-7.png
+cardImage: image-7.png
 title: Mac Johnson
 description: Prototyper
 ---
