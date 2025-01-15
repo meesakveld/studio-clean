@@ -19,7 +19,7 @@ module.exports = function (eleventyConfig) {
     return {
         dir: {
             input: "./input",
-            output: "./output"
+            output: "./docs"
         }
     }
 };
