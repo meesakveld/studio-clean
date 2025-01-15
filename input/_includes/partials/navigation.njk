@@ -3,14 +3,14 @@
 
     <ul class="nav__list">
         {% for page in collections.navigation | sortByOrder() %}
-            <li><a href="{{ page.url }}">{{ page.data.page_title }}</a></li>
+            <li><a href="{{ page.url | absoluteUrl }}">{{ page.data.page_title }}</a></li>
         {% endfor %}
     </ul>
 
     {% if showLegal %}
         <ul class="nav__list">
             {% for legalPage in collections.legal %}
-                <li><a href="{{ legalPage.url }}">{{ legalPage.data.page_title }}</a></li>
+                <li><a href="{{ legalPage.url | absoluteUrl }}">{{ legalPage.data.page_title }}</a></li>
             {% endfor %}
         </ul>
     {% endif %}
