@@ -21,6 +21,10 @@ module.exports = function (eleventyConfig) {
 
     // Filter om URL's aan te passen aan de base URL
     eleventyConfig.addFilter("absoluteUrl", (url) => {
+        if (url.startsWith("mailto:") || url.startsWith("tel:")) {
+            return url;
+        }
+
         return `${baseUrl}${url}`;
     });
 
