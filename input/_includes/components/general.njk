@@ -18,11 +18,11 @@
 {% endmacro %}
 
 {% macro button(url, title) %}
-    <a class="button" href="{{ url }}">{{ title }}</a>
+    <a class="button" href="{{ url | absoluteUrl }}">{{ title }}</a>
 {% endmacro %}
 
 {% macro buttonLink(url, title) %}
-    <a class="button_link" href="{{ url }}">{% if title %}<p>{{ title }}</p>{% endif %}</a>
+    <a class="button_link" href="{{ url | absoluteUrl }}">{% if title %}<p>{{ title }}</p>{% endif %}</a>
 {% endmacro %}
 
 {% macro card(imageUrl, title, description, url) %}
@@ -31,7 +31,7 @@
             {% if url %}
                 {{ buttonLink(url, "") }}
             {% endif %}
-            <img class="card__image" src="{{ '/assets/images/' ~ imageUrl | absoluteUrl }}" alt="{{ title }}">
+            <img class="card__image" src="{{ ('/assets/images/' ~ imageUrl) | absoluteUrl }}" alt="{{ title }}">
         </div>
         <div class="card__content">
             <h2 class="card__title">{{ title }}</h2>
@@ -43,7 +43,7 @@
 {% macro imageLayout(images) %}
     <div class="image_layout">
         {% for image in images %}
-            <img src="{{ '/assets/images/' ~ image.src | absoluteUrl }}" alt="{{ image.alt }}">
+            <img src="{{ ('/assets/images/' ~ image.src) | absoluteUrl }}" alt="{{ image.alt }}">
         {% endfor %}
     </div>
 {% endmacro %}
@@ -51,7 +51,7 @@
 {% macro listItem(date, left, right, url) %}
     
     <li class="list_item">
-        <{% if url %}a href="{{ url }}"{% else %}div{% endif %} class="list_item__container">
+        <{% if url %}a href="{{ url | absoluteUrl }}"{% else %}div{% endif %} class="list_item__container">
             <div class="list_item__left">
                 {% if date %}
                     <p class="list_item__date">{{ date  | customDate }}</p>
@@ -68,6 +68,6 @@
 
 {% macro banner(imageURL, title) %}
     <div class="banner">
-        <img src="{{ "/assets/images/" ~ imageURL | absoluteUrl }}" alt="{{ title }}">
+        <img src="{{ ("/assets/images/" ~ imageURL) | absoluteUrl }}" alt="{{ title }}">
     </div>
 {% endmacro %}
