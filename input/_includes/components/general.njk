@@ -31,7 +31,7 @@
             {% if url %}
                 {{ buttonLink(url, "") }}
             {% endif %}
-            <img class="card__image" src="./assets/images/{{ imageUrl }}" alt="{{ title }}">
+            <img class="card__image" src="{{ '/assets/images/' ~ imageUrl | absoluteUrl }}" alt="{{ title }}">
         </div>
         <div class="card__content">
             <h2 class="card__title">{{ title }}</h2>
@@ -43,7 +43,7 @@
 {% macro imageLayout(images) %}
     <div class="image_layout">
         {% for image in images %}
-            <img src="./assets/images/{{ image.src }}" alt="{{ image.alt }}">
+            <img src="{{ '/assets/images/' ~ image.src | absoluteUrl }}" alt="{{ image.alt }}">
         {% endfor %}
     </div>
 {% endmacro %}
@@ -68,6 +68,6 @@
 
 {% macro banner(imageURL, title) %}
     <div class="banner">
-        <img src="./assets/images/{{ imageURL }}" alt="{{ title }}">
+        <img src="{{ "/assets/images/" ~ imageURL | absoluteUrl }}" alt="{{ title }}">
     </div>
 {% endmacro %}
